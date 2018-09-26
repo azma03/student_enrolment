@@ -24,6 +24,11 @@ house4 = House.new({
   })
 house4.save()
 
+house5 = House.new({
+  "name" => "Clockwise"
+  })
+house5.save()
+
 
 student1 = Student.new({
   "first_name" => "Valentina",
