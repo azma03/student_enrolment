@@ -1,0 +1,10 @@
+body {
+  text-align: center;
+}
+
+
+table {
+  align-self: center;
+  text-align: center;
+  border: 2px solid black;
+}
