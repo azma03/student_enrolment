@@ -1,0 +1,8 @@
+<h1>All the Students</h1>
+<% for student in @students %>
+  <p>First Name: <%= student.first_name %> Last Name: <%= student.last_name %> House: <%= student.show_house().name %> Age: <%= student.age %> </p>
+<% end %>
+
+<ul>
+  <li><a href="/student-enrolment/new">Enrol New Student</a></li>
+</ul>

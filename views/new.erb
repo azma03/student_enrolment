@@ -1,0 +1,24 @@
+<form action="/student-enrolment/:id/update" method="post">
+  <label for="first-name">First Name:</label>
+  <input id="first-name" type="text" name="first_name">
+
+  <label for="last-name">Last Name:</label>
+  <input id="last-name" type="text" name="last_name">
+
+  <label for="house-select">Select a house</label>
+  <select name="house_id" id="house-select">
+    <% for house in @houses %>
+    <option value="<%=house.id %>" ><%=house.name %></option>
+    <%# <option value="Gryffindor">Gryffindor</option>
+    <option value="Ravenclaw">Ravenclaw</option>
+    <option value="Hufflepuff">Hufflepuff</option>
+    <option value="Slytherin">Slytherin</option> %>
+    <%end %>
+  </select>
+
+  <label for="age">Age:</label>
+  <input id="age" type="text" name="age">
+
+  <input type="submit" value="Enrol" />
+
+</form>
